@@ -93,10 +93,22 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         transition: 3s;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
 
     h1:hover {
         color: #000000;
+    }
+ 
+    @keyframes fadeInAnimation {
+        0% {
+            background: #222;
+        }
+        100% {
+            background: #000000;
+         }
     }
     
     @media screen and (max-width: 768px) {
