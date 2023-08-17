@@ -82,12 +82,8 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;  
-        background: url(./images/fuzz.png), radial-gradient(#000, #000);
+        background: url(./images/fuzz.png), radial-gradient(#222, #000);
         background-blend-mode: multiply;
-        animation: bodyTexture ease 8s;
-        animation-delay : 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
     }
 
     h1 {
@@ -103,15 +99,6 @@
         animation-delay : 1s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-    }
-        
-    @keyframes bodyTexture {
-        0% {
-            background: url(./images/fuzz.png), radial-gradient(#000, #000);
-        }
-        100% { 
-            background: url(./images/fuzz.png), radial-gradient(#222, #000);
-        }
     }
         
     @keyframes fadeInAnimation {
